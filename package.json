@@ -1,0 +1,19 @@
+{
+  "name": "neurodiversity-questionnaire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexHodson/neurodiversity-questionnaire.git"
+  },
+  "author": "Alex Hodson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexHodson/neurodiversity-questionnaire/issues"
+  },
+  "homepage": "https://github.com/AlexHodson/neurodiversity-questionnaire#readme"
+}
