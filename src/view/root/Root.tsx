@@ -1,6 +1,6 @@
 import React from "react";
-import ThemeSelection from '../../components/theme-selection/ThemeSelection';
 import { useTheme } from './../../hooks/theme/useTheme'
+import AppHeader from './../../components/header/AppHeader'
 
 const Root = () => {
 	const { theme } = useTheme()
@@ -10,8 +10,7 @@ const Root = () => {
 				<div className="root">
 					<div className="container app-container">
 						<div className="App">
-							<ThemeSelection />
-							<p>Text</p>
+							<AppHeader />
 						</div>
 					</div>
 				</div>

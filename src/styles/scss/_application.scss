@@ -10,10 +10,25 @@
 	width: 100vw;
 }
 
+.container {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
 .app-container {
 	position: relative;;
 	top: 7.5vh;
 	width: 90vw;
 	height: 85vh;
 	@include theme-aware('box-shadow', 'box-shadow');
+}
+
+#app-header {
+	padding: 2rem;
+	@include theme-aware('background', 'app-header');
+	@include theme-aware('color', 'app-header-text')
+}
+
+.custom-select {
+	padding: 10px
 }

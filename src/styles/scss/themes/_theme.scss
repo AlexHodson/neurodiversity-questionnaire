@@ -4,11 +4,15 @@ $themes: (
 	light: (
 		colour-background: $white,
 		text-colour: $black,
-		box-shadow: $darkGrey 0px 0px 30px
+		box-shadow: $darkGrey 0px 0px 30px,
+		app-header: $darkBlue,
+		app-header-text: $white,
 	),
 	dark: (
 		colour-background: $darkGrey,
 		text-colour: $white,
-		box-shadow: $lightGrey 0px 0px 30px
+		box-shadow: $lightGrey 0px 0px 30px,
+		app-header: $darkBlue,
+		app-header-text: $white,
 	)
 )
