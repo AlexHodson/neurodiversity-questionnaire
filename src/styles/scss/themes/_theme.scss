@@ -3,10 +3,12 @@
 $themes: (
 	light: (
 		colour-background: $white,
-		text-colour: $black
+		text-colour: $black,
+		box-shadow: $darkGrey 0px 0px 30px
 	),
 	dark: (
-		colour-background: $black,
-		text-colour: $white
+		colour-background: $darkGrey,
+		text-colour: $white,
+		box-shadow: $lightGrey 0px 0px 30px
 	)
 )

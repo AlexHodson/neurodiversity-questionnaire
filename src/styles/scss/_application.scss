@@ -6,5 +6,14 @@
 .root {
 	@include theme-aware('background', 'colour-background');
 	@include theme-aware('color', 'text-colour');
-  }
+	height: 100vh;
+	width: 100vw;
+}
 
+.app-container {
+	position: relative;;
+	top: 7.5vh;
+	width: 90vw;
+	height: 85vh;
+	@include theme-aware('box-shadow', 'box-shadow');
+}
