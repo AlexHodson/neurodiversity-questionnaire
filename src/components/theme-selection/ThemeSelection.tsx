@@ -1,28 +1,27 @@
 import React, { useState } from 'react'
+import CustomSelect from '../form-control/custom-select/CustomSelect'
 import { useTheme } from './../../hooks/theme/useTheme'
 
 const ThemeSelection = () => {
-	const [user, setUser] = useState({ 'theme': 'light' })
+	const themes: any = [
+		{ 'label': 'Light', 'value': 'light' },
+		{ 'label': 'Dark', 'value': 'dark' }
+	]
+
+	const [user, setUser] = useState(themes[0])
 
 	const { setTheme } = useTheme()
 
-	const themes: any = ['Light', 'Dark']
+	const changeTheme = (selectedTheme: any) => {
+		setTheme(selectedTheme['value'])
+		setUser({ ...selectedTheme })
 
-	const changeTheme = (selectedTheme: React.FormEvent<HTMLSelectElement>) => {
-		setTheme(selectedTheme.currentTarget.value.toLowerCase())
-    
 		document.documentElement.className = '';
-		document.documentElement.classList.add(`theme-${user.theme}`);
+		document.documentElement.classList.add(`theme-${user.label}`);
 	}
 
 	return (
-		<select className="custom-select" defaultValue={user.theme} onChange={e => changeTheme(e)}>
-			{
-				themes.map((theme: string, index: number) =>
-					<option value={theme} key={index}>{theme}</option>
-				)
-			}
-		</select>
+		<CustomSelect state={user} options={themes} handleChange={changeTheme} label="Theme Options" />
 	)
 }
 
