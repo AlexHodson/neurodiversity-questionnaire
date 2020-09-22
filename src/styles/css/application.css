@@ -1,0 +1,40 @@
+/**
+ * theme-aware - Change color of a css property based on the currently active theme
+ *
+ * @param  {key}     CSS property
+ * @param  {color}   Color name defined in the themes under _color-palette.scss
+ *
+ * @example - @include theme-aware('background', 'color-background');
+ * @returns - background: #FFF;
+ */
+.root {
+  height: 100vh;
+  width: 100vw;
+}
+.theme-light .root {
+  background: #fff;
+}
+.theme-dark .root {
+  background: #1a1c1d;
+}
+.theme-light .root {
+  color: #000;
+}
+.theme-dark .root {
+  color: #fff;
+}
+
+.app-container {
+  position: relative;
+  top: 7.5vh;
+  width: 90vw;
+  height: 85vh;
+}
+.theme-light .app-container {
+  box-shadow: #1a1c1d 0px 0px 30px;
+}
+.theme-dark .app-container {
+  box-shadow: #aaa 0px 0px 30px;
+}
+
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,14 @@
+@import '../modules/_colour.scss';
+
+$themes: (
+	light: (
+		colour-background: $white,
+		text-colour: $black,
+		box-shadow: $darkGrey 0px 0px 30px
+	),
+	dark: (
+		colour-background: $darkGrey,
+		text-colour: $white,
+		box-shadow: $lightGrey 0px 0px 30px
+	)
+)
