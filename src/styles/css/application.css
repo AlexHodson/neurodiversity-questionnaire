@@ -24,6 +24,11 @@
   color: #fff;
 }
 
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .app-container {
   position: relative;
   top: 7.5vh;
@@ -35,6 +40,26 @@
 }
 .theme-dark .app-container {
   box-shadow: #aaa 0px 0px 30px;
+}
+
+#app-header {
+  padding: 2rem;
+}
+.theme-light #app-header {
+  background: #24334e;
+}
+.theme-dark #app-header {
+  background: #24334e;
+}
+.theme-light #app-header {
+  color: #fff;
+}
+.theme-dark #app-header {
+  color: #fff;
+}
+
+.custom-select {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=application.css.map */

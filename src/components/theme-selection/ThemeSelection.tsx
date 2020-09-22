@@ -16,7 +16,7 @@ const ThemeSelection = () => {
 	}
 
 	return (
-		<select defaultValue={user.theme} onChange={e => changeTheme(e)}>
+		<select className="custom-select" defaultValue={user.theme} onChange={e => changeTheme(e)}>
 			{
 				themes.map((theme: string, index: number) =>
 					<option value={theme} key={index}>{theme}</option>
