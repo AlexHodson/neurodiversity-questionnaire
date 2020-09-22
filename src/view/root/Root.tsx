@@ -2,7 +2,7 @@ import React from "react";
 
 const Root = () => {
 	return (
-		<div className="container">
+		<div className="container app-container">
 
 		</div>
 	)

@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+ 
+// 1.Base
+@import 'mixin/theme-aware.scss';
+
+.root {
+	@include theme-aware('background', 'colour-background');
+	@include theme-aware('color', 'text-colour');
+  }
+
