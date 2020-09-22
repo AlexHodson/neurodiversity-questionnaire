@@ -17,12 +17,6 @@
 .theme-dark .root {
   background: #1a1c1d;
 }
-.theme-light .root {
-  color: #000;
-}
-.theme-dark .root {
-  color: #fff;
-}
 
 .container {
   padding-left: 0 !important;
@@ -51,15 +45,64 @@
 .theme-dark #app-header {
   background: #24334e;
 }
-.theme-light #app-header {
+
+.theme-light #header {
   color: #fff;
 }
-.theme-dark #app-header {
+.theme-dark #header {
   color: #fff;
 }
 
-.custom-select {
-  padding: 10px;
+.select {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  font: 400 13px/20px "Source Sans Pro", sans-serif;
+  color: unset !important;
+}
+
+.theme-light .select .label {
+  color: #fff;
+}
+.theme-dark .select .label {
+  color: #fff;
+}
+
+.select:focus {
+  outline: 0;
+}
+
+.select:focus .selection {
+  box-shadow: 0 0 1px 1px #00a9e0;
+}
+
+.select .selection {
+  position: relative;
+  padding: 5px;
+  border: 1px solid #ddd;
+  background: red !important;
+}
+
+.select .value {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: solid #ddd;
+  border-width: 0 1px;
+  background-color: red !important;
+}
+
+.select .option {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=application.css.map */
